@@ -6,6 +6,7 @@ public class Book {
     private String title;
     private String priceOld;
     private String price;
+    private Integer author_id;
 
     @Override
     public String toString() {
@@ -15,7 +16,16 @@ public class Book {
                 ", title='" + title + '\'' +
                 ", priceOld='" + priceOld + '\'' +
                 ", price='" + price + '\'' +
+                ", author_id=" + author_id +
                 '}';
+    }
+
+    public Integer getAuthor_id() {
+        return author_id;
+    }
+
+    public void setAuthor_id(Integer author_id) {
+        this.author_id = author_id;
     }
 
     public Integer getId() {
