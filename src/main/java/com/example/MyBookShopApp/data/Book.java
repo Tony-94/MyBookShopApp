@@ -1,11 +1,19 @@
 package com.example.MyBookShopApp.data;
 
+import javax.persistence.*;
+//@Entity
+//@Table(name = "books")
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
     private String author;
     private String title;
     private String priceOld;
     private String price;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "author_id" , referencedColumnName = "id")
     private Integer author_id;
 
     @Override
