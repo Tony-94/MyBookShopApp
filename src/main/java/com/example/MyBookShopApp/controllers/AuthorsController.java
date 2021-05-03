@@ -19,6 +19,6 @@ public class AuthorsController {
     @GetMapping("/authors")
     public String authorsPage(Model model) {
         model.addAttribute("authorData", authorService.getAuthorsData());
-        return "authors/index";
+        return "spring-frontend/authors/index";
     }
 }
